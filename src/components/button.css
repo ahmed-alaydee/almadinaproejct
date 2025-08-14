@@ -1,0 +1,78 @@
+:root {
+    --white-color: #f6f6f6;
+    --dark-green: #0c3c2d;
+    --mid-green: #5e8d6b;
+    --gold: #d6a73d;
+    --hover-overlay: rgba(179, 255, 0, 0.2); 
+    --body-font: 'Poppins', sans-serif;
+  }
+  
+  .gt-btn {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: linear-gradient(to right, var(--dark-green), var(--mid-green), var(--gold));
+    color: var(--white-color);
+    font-family: var(--body-font);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 16px 32px;
+    min-width: 180px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .gt-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--hover-overlay);
+    z-index: -1;
+    transition: width 0.6s ease;
+    transform: skew(-60deg);
+    transform-origin: left;
+  }
+  
+  .gt-btn:hover::before {
+    width: 120%;
+  }
+  
+  .gt-btn:hover {
+    color: var(--white-color);
+    transform: translateY(-2px);
+  }
+  
+  .gt-btn-icon::after {
+    content: "";
+    background-image: url("../components/images/icon2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 14px;
+    display: inline-block;
+    transition: transform 0.4s ease;
+  }
+  
+  .gt-btn:hover.gt-btn-icon::after {
+    transform: rotate(180deg);
+  }
+  
+
+  @media (max-width:390px) {
+    .response{
+      padding: 10px;
+      font-size: 13px;
+    }
+    
+  }

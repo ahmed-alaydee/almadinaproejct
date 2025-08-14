@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection{
+    background-color: #000000;
+    color: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  color: #0c3c2d;
+  /* height: 100vh; */
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* Scrollbar للـ Webkit  */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f5f2; 
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #5e8d6b, #0c3c2d);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #d6a73d, #5e8d6b);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #5e8d6b #f0f5f2;
+}
+
+

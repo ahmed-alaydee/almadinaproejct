@@ -1,0 +1,82 @@
+
+.navbar.scrolled {
+  background-color: #0c3c2d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.navbar.scrolled a {
+  color: #f1f1f1; 
+}
+
+.navbar.scrolled .logo img {
+  filter: brightness(0) invert(1); 
+}
+
+
+
+/*  animation nav bar  */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+
+
+@media not all and (min-width: 768px) {
+    .max-md\:px-4 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        margin-top: -63px;
+    }
+}
+
+.close-btn{
+  background-color: #013525;
+  color: #fff;
+  padding: 7px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.5s;
+}
+.close-btn:hover{
+  background-color: #000;
+  color: #f2c373;
+}
+
+.flooo{
+  font-weight: 600;
+  color: #013525;
+  font-size: 20px;
+}
+
+
+.my-link{
+  color: "#000";
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+border-radius: 50%;
+  border: "1px  red";
+  padding: 7px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.my-link:hover{
+  background-color: #0c3c2d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: white;
+}
